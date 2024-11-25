@@ -22,7 +22,7 @@ function App() {
       },
       body:JSON.stringify(userDetails)
     }
-  const response=await fetch('http://localhost:5000/api/employees/user-data',options)
+  const response=await fetch('https://projectbackend-m3w7.onrender.com/api/employees/user-data',options)
   const data=await response.json()
   console.log(response)
  if(response.ok){
